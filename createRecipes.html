@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="createRecipes.css" />
+  </head>
+  <body>
+    <div class="Background"></div>
+    <div class="overlay">
+      <h1>Craft Your Culinary Masterpiece: Share Your Recipe</h1>
+      <div class="recipeFormDiv">
+        <form id="recipeForm">
+          <div class="formDiv">
+            <label class="Label" for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" required />
+          </div>
+
+          <div class="formDiv">
+            <label class="Label" for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" required></textarea>
+          </div>
+
+          <div class="formDiv">
+            <label class="Label" for="instructions">Instructions:</label>
+            <textarea id="instructions" required></textarea>
+          </div>
+
+          <div class="formDiv">
+            <label class="Label-input" for="image"
+              >click to select the image :</label
+            >
+            <input type="file" id="image" accept="image/*" required />
+            <img id="imgPreview" />
+          </div>
+
+          <button type="submit">Submit Recipe</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="createRecipes.js"></script>
+</html>

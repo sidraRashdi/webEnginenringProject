@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp</title>
+    <link rel="stylesheet" href="signIn.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay">
+        <div class="leftContainer">
+          <div class="heading">
+            <h2>Recipes Sharing App</h2>
+          </div>
+        </div>
+        <div class="rightContainer">
+          <form action="" class="Form">
+            <h2 class="signHeading">signUp</h2>
+            <div class="formDiv">
+              <label for="username">User name</label>
+              <input id="username" type="text" required />
+            </div>
+            <div class="formDiv">
+              <label for="password">password</label>
+              <div class="password-input">
+                <input type="password" id="password" required />
+                <i class="toggle-password fas fa-eye"></i>
+              </div>
+            </div>
+            <button type="submit" class="signUp">Sign Up</button>
+            <div class="errorMessage"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="signIn.js"></script>
+  </body>
+</html>
